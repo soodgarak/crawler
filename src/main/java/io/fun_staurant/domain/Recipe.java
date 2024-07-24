@@ -1,9 +1,11 @@
 package io.fun_staurant.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Entity
+@Getter
 @NoArgsConstructor
 public class Recipe {
     @Id
