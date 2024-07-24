@@ -16,21 +16,21 @@ public class Recipe {
     private String title;
 
     @Column(nullable = false)
-    private String contents;
+    private String content;
 
     @Column(nullable = false)
     private String description;
 
     private String imageURL;
 
-    private Recipe (String title, String contents, String description, String imageURL) {
+    private Recipe (String title, String content, String description, String imageURL) {
         this.title = title;
-        this.contents = contents;
+        this.content = content;
         this.description = description;
         this.imageURL = imageURL;
     }
 
-    public static Recipe of(String title, String contents, String description, String imageURL) {
-        return new Recipe(title, contents, description, imageURL);
+    public static Recipe of(String title, String content, String description, String imageURL) {
+        return new Recipe(title, content, description, imageURL);
     }
 }
