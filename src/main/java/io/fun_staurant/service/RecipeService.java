@@ -23,6 +23,7 @@ public class RecipeService {
     }
 
     private String deleteHtmlAndCss(String content) {
-        return content.replaceAll("<.*?>", "");
+        content = content.replaceAll("<.*?>", "");
+        return content.replaceAll("&.*?;", "");
     }
 }
